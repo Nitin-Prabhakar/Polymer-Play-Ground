@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Polymer Play Ground</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="elements/picture.html">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1 class=text-center>Hello, world!</h1>
+    <div class="container">
+      <div class="row">
+        <my-img src="images/calorie" format="jpg" alt="fruits and sandwitch" caption="healthy eat"></my-img>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <h3 class=text-center> Added with normal markup</h3>
+          <figure>
+            <img class="img-responsive"src="images/healthy-life.jpg">
+            <figcaption>(style inside your custom element doesn't apply to me)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

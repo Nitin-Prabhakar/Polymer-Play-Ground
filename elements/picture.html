@@ -1,0 +1,44 @@
+<dom-module id="my-img">
+  <style>
+  figcaption{
+    font-family:monospace;
+    text-align: center;
+    padding: 0.2em;
+  }
+  </style>
+  <template>
+    <div id="my-img-container" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3 class=text-center> Added with a custom element </h3>
+      <figure>
+
+          <img class="img-responsive" src="[[computedSrc(src,format)]]" alt="[[alt]]">
+
+          <figcaption>[[caption]]</figcaption>
+
+      </figure>
+    </div>
+  </template>
+  <script>
+  Polymer({
+    is:"my-img",
+    properties:{
+      alt:{
+        type:String
+      },
+      src:{
+        type:String
+      },
+      format:{
+        type:String
+      },
+      caption:{
+        type:String
+      }
+    },
+    computedSrc: function(s,f){
+      var src = s+'.'+f;
+      return src;
+    }
+  });
+  </script>
+</dom-module>

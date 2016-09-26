@@ -1,0 +1,27 @@
+{
+  "name": "polymer-play-ground",
+  "authors": [
+    "Nitin <pmitwithnitin@gmail.com>"
+  ],
+  "description": "It is Fun to play with Polymer",
+  "main": "index.html",
+  "keywords": [
+    "polymer",
+    "webcomponents",
+    "custom-elements",
+    "shadowdom",
+    "htmlimports"
+  ],
+  "license": "MIT",
+  "homepage": "http://polymer-playground.nitinprabhakar.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "polymer": "Polymer/polymer#^1.6.1"
+  }
+}
